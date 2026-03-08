@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mi web gamer</title>
+</head>
+
+<body style="background-color:black; color:lime; text-align:center; font-family:Arial;">
+
+<h1>QUE ROLLO BRO?</h1>
+
+<p>XD.</p>
+
+<button>Jugar</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Botón mágico</title>
+</head>
+
+<body id="fondo" style="background:black; color:black; text-align:center;">
+
+<h2>demostración</h2>
+
+<button onclick="cambiarColor()">Cambiar color</button>
+
+<script>
+
+function cambiarColor(){
+document.getElementById("fondo").style.background="red";
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>tres intentos sino eres gei</title>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h1>Adivina el número o ya sabes</h1>
+
+<p>Elige un número del 1 al 10</p>
+
+<input id="numero">
+
+<button onclick="jugar()">gei</button>
+
+<p id="resultado"></p>
+
+<script>
+
+let secreto = 11;
+
+function jugar(){
+
+let intento = document.getElementById("numero").value;
+
+if(intento == secreto){
+document.getElementById("resultado").innerText="pues mira, no eres gei 🎉";
+}
+else{
+document.getElementById("resultado").innerText="dale otra, aun que ya eres gei";
+}
+
+}
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Juego rápido</title>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h1>Haz clic al cuadrado</h1>
+
+<div onclick="ganar()" style="width:100px;height:100px;background:red;margin:auto;cursor:pointer;"></div>
+
+<p id="mensaje"></p>
+
+<script>
+
+function ganar(){
+document.getElementById("mensaje").innerText="Ganaste bro 🎉";
+}
+
+</script>
+
+</body>
+</html>
